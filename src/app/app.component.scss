@@ -1,0 +1,53 @@
+.background {
+  background-image: url('/assets/img/wall.jpg');
+  background-size: 110% auto;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    max-height: 80vh;
+    overflow: hidden;
+  }
+}
+
+.footer{
+  max-height: 20vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  .div{
+    height: 100px;
+    width: 300px;
+    background-image: linear-gradient(to right top, #665ca8, #5e54a1, #574c99, #4f4592, #483d8b);
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px -3px rgba(0,0,0,0.3);
+
+    p{
+      font-family: 'Schoolbell', serif !important;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    button{
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: 'Schoolbell', serif !important;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}

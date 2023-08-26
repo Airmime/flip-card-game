@@ -1,0 +1,17 @@
+<ng-container *ngIf="flipCardModel">
+  <div class="flip-card" [class.flipped]="flipCardModel.isFlipped" (click)="toggleFlip()">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <ng-container *ngIf="!flipCardModel.isFlipped">
+          <img src="/assets/img/who.png" alt="">
+        </ng-container>
+      </div>
+      <div class="flip-card-back">
+        <ng-container *ngIf="flipCardModel.isFlipped">
+          <img [src]="getImgSrc()" alt="">
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
