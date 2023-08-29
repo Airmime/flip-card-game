@@ -1,5 +1,5 @@
 <div class="background">
-  <canvas #confettiCanvas style="position: fixed; width: 100%"></canvas>
+  <canvas #confettiCanvas style="position: fixed; width: 100%; z-index: -1"></canvas>
   <div class="grid-container">
     <ng-container *ngFor="let f of flipCards; let i = index">
       <app-flip-card [flipCardModel]="f" (cardClicked)="flipCardClicked($event, i)"></app-flip-card>
